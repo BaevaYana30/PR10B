@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VINYL STORE — Раритетные виниловые пластинки</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,800;1,400&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ШАПКА -->
+    <header class="header">
+        <div class="logo">
+            <span class="logo-title">VINYL STORE</span>
+            <span class="logo-subtitle">✦ РАРИТЕТНЫЙ АНАЛОГОВЫЙ ЗВУК ✦</span>
+        </div>
+        <nav class="nav">
+            <button class="cart-btn" id="open-cart-btn">
+                <span>Корзина</span>
+                <span id="cart-count" class="cart-badge">0</span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- СЕКЦИЯ О НАС -->
+    <section class="about-section">
+        <div class="banner-card">
+            <h2>Коллекция раритетного винила</h2>
+            <p>Добро пожаловать в место с историей. Каждая пластинка в нашей коллекции — это оригинальное издание с неповторимым тёплым ламповым звучанием.</p>
+        </div>
+        <div class="banner-card">
+            <div class="banner-badge">Акустический знак качества</div>
+            <p>Все экземпляры промываются в ультразвуковых ванночках и тестируются на проигрывателях Hi-Fi класса перед выставлением в каталог.</p>
+        </div>
+    </section>
+
+    <!-- КАТАЛОГ -->
+    <main class="catalog">
+        <div class="section-header">
+            <h2 class="genre-title">КОЛЛЕКЦИОННЫЕ ИЗДАНИЯ</h2>
+            <div class="divider-line"></div>
+        </div>
+
+        <div class="card-grid">
+            <!-- Карточка 1 -->
+            <div class="card" data-id="1" data-title="Dark Side of the Moon" data-artist="Pink Floyd" data-price="18500" data-audio="track1.mp3">
+                <div class="album-sleeve">
+                    <div class="vinyl-record">
+                        <div class="grooves ring-1"></div>
+                        <div class="grooves ring-2"></div>
+                        <div class="grooves ring-3"></div>
+                        <div class="label" style="--label-color: #d9383a;">
+                            <div class="center-hole"></div>
+                        </div>
+                    </div>
+                    <button class="fav-btn" aria-label="В избранное/В корзину">
+                        <svg class="heart-icon" viewBox="0 0 24 24">
+                            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="card-info">
+                    <h3 class="title">Dark Side of the Moon</h3>
+                    <div class="artist">Pink Floyd</div>
+                    <div class="vinyl-meta">
+                        <span class="meta-tag">1973 • UK Original</span>
+                        <span class="meta-tag condition">NM / EX</span>
+                    </div>
+                    <div class="price">18 500 <small>тг</small></div>
+                </div>
+            </div>
+
+            <!-- Карточка 2 -->
+            <div class="card" data-id="2" data-title="Abbey Road" data-artist="The Beatles" data-price="16000" data-audio="track2.mp3">
+                <div class="album-sleeve">
+                    <div class="vinyl-record">
+                        <div class="grooves ring-1"></div>
+                        <div class="grooves ring-2"></div>
+                        <div class="grooves ring-3"></div>
+                        <div class="label" style="--label-color: #388ed9;">
+                            <div class="center-hole"></div>
+                        </div>
+                    </div>
+                    <button class="fav-btn" aria-label="В избранное/В корзину">
+                        <svg class="heart-icon" viewBox="0 0 24 24">
+                            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="card-info">
+                    <h3 class="title">Abbey Road</h3>
+                    <div class="artist">The Beatles</div>
+                    <div class="vinyl-meta">
+                        <span class="meta-tag">1969 • Apple Records</span>
+                        <span class="meta-tag condition">VG+ / VG+</span>
+                    </div>
+                    <div class="price">16 000 <small>тг</small></div>
+                </div>
+            </div>
+
+            <!-- Карточка 3 -->
+            <div class="card" data-id="3" data-title="Random Access Memories" data-artist="Daft Punk" data-price="21000" data-audio="track3.mp3">
+                <div class="album-sleeve">
+                    <div class="vinyl-record">
+                        <div class="grooves ring-1"></div>
+                        <div class="grooves ring-2"></div>
+                        <div class="grooves ring-3"></div>
+                        <div class="label" style="--label-color: #d99f38;">
+                            <div class="center-hole"></div>
+                        </div>
+                    </div>
+                    <button class="fav-btn" aria-label="В избранное/В корзину">
+                        <svg class="heart-icon" viewBox="0 0 24 24">
+                            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="card-info">
+                    <h3 class="title">Random Access Memories</h3>
+                    <div class="artist">Daft Punk</div>
+                    <div class="vinyl-meta">
+                        <span class="meta-tag">2013 • Deluxe Edition</span>
+                        <span class="meta-tag condition">MINT (New)</span>
+                    </div>
+                    <div class="price">21 000 <small>тг</small></div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- МОДАЛЬНОЕ ОКНО: КОРЗИНА -->
+    <div class="modal-overlay" id="cart-modal">
+        <div class="modal-window">
+            <div class="modal-header">
+                <h2>Ваша коллекция (Корзина)</h2>
+                <button class="close-btn" id="close-cart">&times;</button>
+            </div>
+            <div class="cart-items" id="cart-items-container"></div>
+            <div class="cart-footer">
+                <div class="total-price">Итого: <span id="cart-total">0 тг</span></div>
+                <button class="btn-primary" id="go-to-checkout">Оформить заказ</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- МОДАЛЬНОЕ ОКНО: ОФОРМЛЕНИЕ -->
+    <div class="modal-overlay" id="checkout-modal">
+        <div class="modal-window checkout-window">
+            <div class="modal-header">
+                <h2>Доставка пластинок</h2>
+                <button class="close-btn" id="close-checkout">&times;</button>
+            </div>
+            <form id="order-form" class="checkout-form">
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label>Ваше Имя</label>
+                        <input type="text" required placeholder="Алмас">
+                    </div>
+                    <div class="form-group">
+                        <label>Телефон</label>
+                        <input type="tel" required placeholder="+7 (700) 000-00-00">
+                    </div>
+                </div>
+                <div class="form-group full-width">
+                    <label>Адрес доставки (Бережная упаковка)</label>
+                    <input type="text" required placeholder="г. Астана, ул. Достык, 1">
+                </div>
+                <div class="checkout-footer">
+                    <button type="button" class="btn-secondary" id="back-to-cart">Назад</button>
+                    <div class="total-price">К оплате: <span id="checkout-total">0 тг</span></div>
+                    <button type="submit" class="btn-primary">Подтвердить заказ</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
